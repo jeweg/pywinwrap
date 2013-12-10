@@ -18,7 +18,7 @@ Just rename script and a copy of the executable (```<name>-script.py``` and ```<
 This is an intentionally simplistic approach that happens to work very well for my use cases.
 Some alternatives:
 * A wrapping ```.bat``` file. Unfortunately, there doesn't seem to be workaround for the annoying prompt when interrupting a script via Ctrl-C.
-* Adding ```.py``` to **PATHEXT**. That works well, but requires some user cooperation or additional setup.
+* Adding ```.py``` to *PATHEXT*. That works well, but requires some user cooperation or additional setup.
 * A much more sophisticated approach is described in  [PEP-397](http://www.python.org/dev/peps/pep-0397/) and implemented [here](https://bitbucket.org/pypa/pylauncher). That seems a bit more invasive, though.
 
 
