@@ -24,4 +24,4 @@ Some alternatives:
 
 **Todo:**
 * There is no equivalent to setuptools' ```cli.exe``` to start GUI scripts yet.
-* Trailing arguments in the shebang line will not work.
+* Trailing arguments in the shebang line are not supported yet.
