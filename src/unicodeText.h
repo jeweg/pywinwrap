@@ -4,8 +4,8 @@
 #include <windows.h>
 
 #if defined(_MSC_VER)
-  #include <intrin.h>
-  #define SWAP_BYTES(v) _byteswap_ushort(v)
+#  include <intrin.h>
+#  define SWAP_BYTES(v) _byteswap_ushort(v)
 #else
   unsigned short SWAP_BYTES(unsigned short v)
   {
