@@ -9,7 +9,7 @@
 #else
   unsigned short SWAP_BYTES(unsigned short v)
   {
-    return ((v & 0xff) << 8) | ((v & 0xff00) >> 8);
+    return ((v & 0xff) << 8) | (v >> 8);
   }
 #endif
 
