@@ -141,7 +141,7 @@ int wmain()
                            wcslen(myPath) +
                            wcslen(PythonScriptSuffix) +
                            wcslen(arguments) +
-                           3; // 2 spaces and terminator.
+                           5; // 2 spaces, 2 quotes, terminator.
   
   // No need to delete this because the process will end anyway.
   wchar_t *commandLine = new wchar_t[commandLineSize];
@@ -149,8 +149,10 @@ int wmain()
 
   wcscat_s(commandLine, commandLineSize, pythonExe);
   wcscat_s(commandLine, commandLineSize, L" ");
+  wcscat_s(commandLine, commandLineSize, L"\"");
   wcscat_s(commandLine, commandLineSize, myPath);
   wcscat_s(commandLine, commandLineSize, PythonScriptSuffix);
+  wcscat_s(commandLine, commandLineSize, L"\"");
   wcscat_s(commandLine, commandLineSize, L" ");
   wcscat_s(commandLine, commandLineSize, arguments);
 
