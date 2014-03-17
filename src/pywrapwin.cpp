@@ -1,8 +1,8 @@
 #ifndef UNICODE
-  #define UNICODE
+#  define UNICODE
 #endif
 #ifndef _UNICODE
-  #define _UNICODE
+#  define _UNICODE
 #endif
 #define NOMINMAX
 #define WIN32_LEAN_AND_MEAN
